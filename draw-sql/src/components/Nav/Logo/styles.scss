@@ -4,22 +4,21 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 25px;
-
-  &__elements {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .logo__image {
+    height: 40px;
+    width: 40px;
     cursor: pointer;
-    .logo__image {
-      height: 36px;
+  }
+  .logo__text {
+    margin: 0 25px 0 10px;
+    cursor: pointer;
+    font-size: 23px;
+    .sql__text {  
+      font-size: 30px;
+      font-weight: 200;
     }
-    .logo__text {
-      height: 25px;
-      margin: 0 0.5rem;
-      @media #{$m-smallscreen} {
-        display: none;
-      }
+    @media #{$m-smallscreen} {
+      display: none;
     }
   }
 

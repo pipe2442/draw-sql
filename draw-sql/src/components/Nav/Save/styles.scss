@@ -4,14 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
-  margin: 0 25px;
-  @media #{$m-phone} {
-    width: 100%;
-    margin: 011;
-  }
   &__text {
     color: $link-color;
+    @media #{$m-phone} {
+      display: none;
+    }
   }
   &__profile {
     width: 40px;

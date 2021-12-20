@@ -2,6 +2,7 @@
 
 .button {
     display: flex;
+    margin: 0 15px;
     &__save {
         padding: 5px 15px;
         border: solid 1px $white;
