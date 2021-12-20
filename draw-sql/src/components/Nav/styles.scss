@@ -1,0 +1,17 @@
+@import "../../assets/styles/global.scss";
+
+.nav {
+  background-color: $nav-color;
+  min-height: 35px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  @media #{$m-phone} {
+    flex-wrap: wrap;
+  }
+
+
+}

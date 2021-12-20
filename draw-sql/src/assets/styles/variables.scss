@@ -1,0 +1,14 @@
+$nav-color : #5661B3;
+$global-font: 'Inter', sans-serif;
+$white: #ffff;
+$link-color: #969DE9;
+$hover-blue: #667EEA;
+$svg-white: invert(100%) sepia(0%) saturate(1812%) hue-rotate(278deg) brightness(110%) contrast(93%);
+$svg-hover-color: invert(38%) sepia(100%) saturate(305%) hue-rotate(194deg) brightness(86%) contrast(97%);
+
+$smallscreen: 945px;
+$tablet: 768px;
+$phone: 520px;
+$m-tablet: "only screen and (max-width: #{$tablet + 1})";
+$m-smallscreen: "only screen and (max-width: #{$smallscreen + 1})";
+$m-phone: "only screen and (max-width: #{$phone + 1})";

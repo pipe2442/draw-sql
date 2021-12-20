@@ -1,0 +1,56 @@
+@import "../../../../assets/styles/global.scss";
+
+.button {
+    display: flex;
+    &__save {
+        padding: 5px 15px;
+        border: solid 1px $white;
+        background-color: transparent;
+        color: $white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 35px;
+        cursor: pointer;
+        transition: 0.3s;
+        .button__icon {
+          width: 10px;
+          margin: 5px 5px 0 0;
+          filter: $svg-white;
+          transition: 0.3s;
+        }
+        &:hover {
+          background-color: $white;
+          color: $nav-color;
+          .button__icon {
+            filter: $svg-hover-color;
+          }
+        }
+      }
+      &__arrow {
+        padding: 5px 8px;
+        border: solid 1px $white;
+        background-color: transparent;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        min-height: 35px;
+        cursor: pointer;
+        transition: 0.3s;
+        .button__icon {
+          width: 13px;
+          margin-top: 5px;
+          filter: $svg-white;
+          transition: 0.3s;
+        }
+        &:hover {
+          background-color: $white;
+          color: $nav-color;
+          .button__icon {
+            filter: $svg-hover-color;
+          }
+        }
+      }
+}

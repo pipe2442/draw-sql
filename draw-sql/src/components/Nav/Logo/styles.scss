@@ -1,0 +1,58 @@
+@import "../../../assets/styles/global.scss";
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 25px;
+
+  &__elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    .logo__image {
+      height: 36px;
+    }
+    .logo__text {
+      height: 25px;
+      margin: 0 0.5rem;
+      @media #{$m-smallscreen} {
+        display: none;
+      }
+    }
+  }
+
+  &__file {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    @media #{$m-tablet} {
+      display: none;
+    }
+    &:hover {
+      background-color: $hover-blue;
+    }
+  }
+
+  &__share {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    @media #{$m-tablet} {
+      display: none;
+    }
+    .share__image {
+      height: 20px;
+      margin: 0 0.5rem;
+    }
+    &:hover {
+      background-color: $hover-blue;
+    }
+  }
+}

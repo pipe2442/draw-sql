@@ -1,0 +1,21 @@
+@import "../../../assets/styles/global.scss";
+
+.save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  margin: 0 25px;
+  @media #{$m-phone} {
+    width: 100%;
+    margin: 011;
+  }
+  &__text {
+    color: $link-color;
+  }
+  &__profile {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
