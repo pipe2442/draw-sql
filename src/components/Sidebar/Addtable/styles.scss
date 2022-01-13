@@ -1,0 +1,15 @@
+@import "../../../assets/styles/global.scss";
+
+.addtable {
+  padding: 10px;
+  font-size: 14px;
+  background-color: $background-gray;
+  color: $white;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $hover-gray;
+  }
+}
