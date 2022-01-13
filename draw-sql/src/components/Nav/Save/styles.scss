@@ -1,0 +1,18 @@
+@import "../../../assets/styles/global.scss";
+
+.save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__text {
+    color: $link-color;
+    @media #{$m-phone} {
+      display: none;
+    }
+  }
+  &__profile {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
