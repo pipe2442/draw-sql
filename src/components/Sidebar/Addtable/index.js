@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./styles.scss";
+import { TableContext } from "../../../App";
 
-function Addtable({ addTable }) {
+function Addtable() {
+
+  const context = useContext(TableContext)
+  const { handleTables } = context
+
   return (
     <>
-      <button onClick={addTable} className="addtable">+ New Table</button>
+      <button onClick={handleTables} className="addtable">+ New Table</button>
     </>
   );
 }

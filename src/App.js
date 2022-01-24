@@ -2,24 +2,34 @@ import './assets/styles/app.scss'
 import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
 import Drawer from "./components/Drawer";
-import { useState } from 'react'
+import React, { useState } from 'react'
+export const TableContext = React.createContext();
 
 function App() {
 
   const [tables, setTables] = useState([])
   const handleTables = () => {
-    const table = 'table'
-    setTables([...tables, table])
+    const table = {
+      title: 'table__1',
+      columns: [
+        'column_1',
+        'column_2',
+        'column_3',
+      ]
+    };
+    setTables([...tables, table]);
   }
 
   return (
-    <div className="app">
-      <Nav />
-      <div className='app__tools'>
-        <Sidebar tables={tables} addTable={handleTables} />
-        <Drawer />
+    <TableContext.Provider value={{tables, handleTables}} >
+      <div className="app">
+        <Nav />
+        <div className='app__tools'>
+          <Sidebar />
+          <Drawer />
+        </div>
       </div>
-    </div>
+    </TableContext.Provider>
   );
 }
 
